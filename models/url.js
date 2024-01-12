@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+mongoose.set("strictQuery", true);
 
 const urlSchema = new mongoose.Schema(
   {
@@ -15,3 +16,8 @@ const urlSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
+
+const URL = mongoose.model("url",urlSchema);
+
+module.exports = URL;
