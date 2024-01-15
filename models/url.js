@@ -3,7 +3,7 @@ mongoose.set("strictQuery", true);
 
 const urlSchema = new mongoose.Schema(
   {
-    shortID: {
+    shortId: {
       type: String,
       required: true,
       unique: true,
